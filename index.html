@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello-Word</title>
+    <title>Hello-World</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;  /* horizontal center */
+            align-items: center;      /* vertical center */
+            background-color: #f0f0f0;
+        }
+
+        .gerak {
+            animation: gerak 2s infinite ease-in-out;
+            display: inline-block;
+        }
+
+        @keyframes gerak {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello-Word</h1>
+    <h1 class="gerak">Hello-World</h1>
 </body>
 </html>
